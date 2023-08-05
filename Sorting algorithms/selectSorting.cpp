@@ -6,9 +6,9 @@ using namespace std;
 int main(){
     int n ;
     cin >> n;
-    int numbers[n];
+    int nums[n];
     for(int i=0 ; i<10 ; i++){
-        cin >> numbers[i] ;
+        cin >> nums[i] ;
     }
 
     for(int i=0 ; i<10 ; i++){

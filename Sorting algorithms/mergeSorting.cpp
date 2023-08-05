@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-    int n=5 , ni = 0 , m=10 , mi = 0; 
+    int n, ni = 0 , m, mi = 0; 
     cin >> n >> m;
     int array1[n] , array2[m] ,max = 0 , min = 0;
 
@@ -27,6 +27,7 @@ int main(){
         
         if(ni!=n && mi!=m && array1[ni] == array2[mi]){
             array4.push_back(array1[ni]);
+            array4.push_back(array1[mi]);
             ni++;
             mi++;
             continue;

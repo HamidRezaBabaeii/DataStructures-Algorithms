@@ -4,8 +4,12 @@
 using namespace std;
 
 int main(){
-
-    int nums[10] ={4,1,3,2,9,6,7,8,5,0};
+    int n ;
+    cin >> n;
+    int numbers[n];
+    for(int i=0 ; i<10 ; i++){
+        cin >> numbers[i] ;
+    }
 
     for(int i=0 ; i<10 ; i++){
         int min = 1000000000;

@@ -4,8 +4,12 @@
 using namespace std;
 
 int main(){
-
-    int numbers[10] = {2,6,5,8,9,1,3,4,7,0};
+    int n ;
+    cin >> n;
+    int numbers[n];
+    for(int i=0 ; i<10 ; i++){
+        cin >> numbers[i] ;
+    }
     int k = 0;
     for(int i=1 ; i<10 ; i++){
         k=i;

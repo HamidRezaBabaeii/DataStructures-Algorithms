@@ -3,20 +3,22 @@
 
 using namespace std ;
 
-int sum = 0;
-int count(int n ,int* arr){
-    if (n<0)return sum ;
-    if(arr[n]%2==0)sum++;
-    return count(n-1 , arr);
+
+int count(int n ,int* arr)
+{
+
+    if (n<0)return 0;
+    if(arr[n]%2==0)return count(n-1 , arr)+1;
+    if(arr[n]%2!=0)return count(n-1 , arr);
 
 }
 
 
 int main(){
-
     int n ;
     cin >> n;
     int arr[n];
+
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];

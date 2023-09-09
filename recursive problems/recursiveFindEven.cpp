@@ -7,9 +7,19 @@ using namespace std ;
 int count(int n ,int* arr)
 {
 
-    if (n<0)return 0;
-    if(arr[n]%2==0)return count(n-1 , arr)+1;
-    if(arr[n]%2!=0)return count(n-1 , arr);
+    if (n<0)
+    {
+        return 0;
+    }
+    
+    if(arr[n]%2==0)
+    {
+        return count(n-1 , arr)+1;
+    }
+    if(arr[n]%2!=0)
+    {
+        return count(n-1 , arr);
+    }
 
 }
 

@@ -1,2 +1,2 @@
 # DataStructures-Algorithms
-DataStructures And Algorithms Exercises 
+DataStructures And Algorithms Exercises.
